@@ -1,0 +1,12 @@
+<form [formGroup]='loginForm' (ngSubmit)='validate()' class="col-md-4" style="margin:20px;">
+    <ng-container *ngFor='let config of frmConfig'>
+        <div class="form-group">
+            <label>{{config.label}}</label>
+            <input type={{config.type}} name={{config.name}} formControlName={{config.name}} class="form-control">
+        </div>        
+    </ng-container>
+    <div *ngIf='loginForm.invalid && (loginForm.dirty || loginForm.touched)'>na na</div>
+    <input type="submit" value="Sign In"  class="btn btn-info" [disabled]='loginForm.invalid'>
+</form>
+
+<span style="color: red;">{{errorMsg}}</span>

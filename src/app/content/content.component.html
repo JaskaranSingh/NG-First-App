@@ -1,0 +1,16 @@
+<div class="card-deck" style="width: 100%">
+  <div *ngFor="let policy of policies" class="card"> 
+    <div class="card-header" style="text-align: center">{{policy.policyName}}</div>
+    <div class="card-body">{{policy.policySummary}}</div>
+  </div>
+</div>
+<div>
+  <h2>What our Customers Say!</h2>
+  <app-testimony></app-testimony>
+  <p>{{feedback1}}</p>
+  <p>{{feedback2}}</p>
+</div>
+
+<section #section1></section>
+<section #section2></section>
+<section #section3></section>

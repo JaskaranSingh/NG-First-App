@@ -1,0 +1,12 @@
+<footer style="text-align: center">
+  <div>
+    {{footerText}}
+  </div>
+  <ul class="list-unstyled list-inline text-center">
+    <li *ngFor="let logo of logoLinks" class="list-inline-item">
+      <a href={{logo.ref}} target="_blank" class={{logo.style}} style="font-size: 18px; margin-right: 5px;">
+          {{logo.text}}
+      </a>
+    </li>
+  </ul>
+</footer>

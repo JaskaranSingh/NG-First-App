@@ -1,0 +1,15 @@
+.logo{
+    width: 100px;
+    height: 100px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+    margin-right: 10px;
+}

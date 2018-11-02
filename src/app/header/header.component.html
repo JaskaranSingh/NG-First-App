@@ -1,0 +1,15 @@
+<header>
+<div class="row">
+  <div class="col-md-3"><img class="logo" src = {{logo}} alt='Company Logo'></div>
+  <div class="col-md-9"><h1>{{majHeading}}</h1></div>
+</div>
+
+<div class="row">
+  <div>
+
+    <!-- <input [(ngModel)]='linkText'> -->
+
+    <app-menu [link]='linkText' [linksFromParent]='links' class=""></app-menu>
+  </div>
+</div>
+</header>

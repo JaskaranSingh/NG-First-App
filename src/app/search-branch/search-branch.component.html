@@ -1,0 +1,15 @@
+<p>
+  Search From our 800 branches
+</p>
+<div class="form-group">  
+<label>City Name: </label>
+<ng-template #locationInfo></ng-template>
+<input [(ngModel)]='searchCity' value="Enter City Name" class="form-control" (focus)='addComponent()'>
+</div>
+<app-show-branch [cityName]='searchCity' (branches)='onReceive($event)'></app-show-branch>
+
+<ol>
+  <li *ngFor='let branch of branchList'>
+    {{branch}}
+  </li>
+</ol>

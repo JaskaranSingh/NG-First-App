@@ -1,0 +1,16 @@
+<div class="col-md-4">
+
+<div class="form-group">
+<label>Enter Your Age</label>:
+
+<!-- Two way binding, Event binding -->
+<input type="text" [(ngModel)]='age' (blur)='changeStatus()'>
+</div>
+<!-- Property Binding Non string Value -->
+<input type="button" [disabled]='isDisabled' value="Get Quote" (click)='showPolicy()'>
+
+<!-- Interpolation with string value -->
+<p>{{age}}</p>
+
+<p>{{suggestedPolicy}}</p>
+</div>
