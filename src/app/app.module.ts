@@ -26,7 +26,9 @@ import { FilterPipe } from './filter.pipe';
 
 import {NgxPaginationModule} from 'ngx-pagination';
 import { ShowHealthPolicyComponent } from './show-health-policy/show-health-policy.component';
-import { DetailsComponent } from './details/details.component'
+import { DetailsComponent } from './details/details.component';
+import { LifeCycleComponent } from './life-cycle/life-cycle.component';
+import { ChildComponent } from './child/child.component'
 
 @NgModule({
   declarations: [
@@ -48,7 +50,9 @@ import { DetailsComponent } from './details/details.component'
     ShowPolicyDetailsComponent,
     FilterPipe,
     ShowHealthPolicyComponent,
-    DetailsComponent
+    DetailsComponent,
+    LifeCycleComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +63,7 @@ import { DetailsComponent } from './details/details.component'
     ReactiveFormsModule
   ],
   providers: [HttpClient],
-  bootstrap: [AppComponent],
+  bootstrap: [LifeCycleComponent],
   entryComponents: [ShowLocationComponent]
 })
 export class AppModule { }
